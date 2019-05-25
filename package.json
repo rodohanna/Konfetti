@@ -4,7 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "webpack --mode=development"
+    "build": "webpack --mode=development",
+    "build-prod": "webpack --mode=production"
   },
   "dependencies": {
     "dom-confetti": "^0.1.1"

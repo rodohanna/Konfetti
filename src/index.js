@@ -6,6 +6,7 @@ chrome.extension.sendMessage({}, function(response) {
       document.addEventListener(
         "click",
         e => {
+          if (!doConfetti) return;
           const { pageX, pageY } = e;
           const div = document.createElement("div");
           div.style.left = `${pageX}px`;
@@ -25,4 +26,17 @@ chrome.extension.sendMessage({}, function(response) {
       );
     }
   }, 10);
+});
+
+let doConfetti;
+chrome.storage.onChanged.addListener(function(changes, namespace) {
+  if (changes.doConfetti !== undefined)
+    doConfetti = changes.doConfetti.newValue;
+});
+chrome.storage.sync.get(["doConfetti"], result => {
+  if (result.doConfetti === undefined) {
+    chrome.storage.sync.set({ doConfetti: true });
+    return;
+  }
+  doConfetti = result.doConfetti;
 });

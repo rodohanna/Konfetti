@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "description": "A delightful burst of confetti every time you click.",
   "author": "Robert Hanna",
-  "permissions": ["activeTab"],
+  "permissions": ["activeTab", "storage"],
   "browser_action": {
     "default_icon": "assets/icon-48.png",
     "default_popup": "popup/index.html"
@@ -15,6 +15,5 @@
       "js": ["main.js"]
     }
   ],
-  "icons": { "48": "assets/icon-48.png", "128": "assets/icon-128.png" },
-  "web_accessible_resources": ["popup/style.css"]
+  "icons": { "48": "assets/icon-48.png", "128": "assets/icon-128.png" }
 }
