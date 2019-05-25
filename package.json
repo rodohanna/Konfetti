@@ -1,0 +1,16 @@
+{
+  "name": "kailey",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --mode=development"
+  },
+  "dependencies": {
+    "dom-confetti": "^0.1.1"
+  },
+  "devDependencies": {
+    "webpack": "^4.31.0",
+    "webpack-cli": "^3.3.2"
+  }
+}
