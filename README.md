@@ -22,7 +22,7 @@ or
 yarn run build-prod
 ```
 
-After building a `main.js` file will be populated in the `dist/` folder.
+After building, a `main.js` file will be populated in the `dist/` folder.
 
 ## Load the extension locally
 
@@ -31,7 +31,7 @@ search bar.
 
 Click on `Load unpacked` and navigate to the `dist/` folder in the file explorer and confirm.
 
-The extension should work on a new tab(s).
+The extension should work in a new tab(s).
 
 Note: Make sure `Developer mode` has been enabled on the `chrome://extensions` page.
 
